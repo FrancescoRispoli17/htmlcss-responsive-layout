@@ -5,3 +5,46 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*TAGS*/
+body{
+    width: 480px;
+}
+header{
+    background-color: #0084fd;
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+}
+header .col{
+    background-color: rgb(226, 116, 226);
+    height: 50px;
+    width: 50%;
+
+}
+header .container{
+    width: 100%;
+    margin: 0 auto;
+}
+main .row{
+    flex-direction: column;
+}
+
+main div:first-child .col{
+    background-color: #b5ddff;
+    height: 400px;
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+
+}
+main div:first-child .row div:first-child{
+    margin-top: 4rem;
+    height: 800px;
+}
+/*CLASS*/
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+}
+
