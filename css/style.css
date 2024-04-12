@@ -17,6 +17,44 @@ header .container{
 main .row{
     flex-direction: column;
 }
+button{
+    background-color: #0084fd;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    border: none;
+    border-radius:2rem;
+    margin-top: 2rem;
+    padding: 1rem 4.5rem;
+    font-family: "PT Sans", sans-serif;
+}
+main img{
+    max-width: 19rem;
+    margin-top: 2rem;
+    display: block;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+li{
+    padding: 0.7rem 0 0 2rem;
+}
+li:last-child a{
+    background-color: white;
+    color: black;
+    font-size: 1.1rem;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/*ID*/
+#normal-menu{
+    display: none;
+}
 #section1 .col{
     background-color: #b5ddff;
     width: 100%;
@@ -41,22 +79,6 @@ main .row{
 }
 #section1 h2{
     color: #0084fd;
-}
-button{
-    background-color: #0084fd;
-    font-size: 1.2rem;
-    font-weight: 500;
-    letter-spacing: 3px;
-    border: none;
-    border-radius:2rem;
-    margin-top: 2rem;
-    padding: 1rem 4.5rem;
-    font-family: "PT Sans", sans-serif;
-}
-main img{
-    max-width: 19rem;
-    margin-top: 2rem;
-    display: block;
 }
 
 /*CLASS*/
@@ -88,9 +110,6 @@ main img{
 }
 
 /*TEXT ALIGN CENTER*/
-.text-center{
-    text-align: center;
-}
 
 /*SPACE BETWEEN*/
 .space-between{
@@ -112,7 +131,6 @@ main img{
     }
     #section1 .row .col:nth-child(2){
         width: calc(100%/3 - 10px);
-        margin-top: 4rem;
         margin-bottom: 0;
     }
     #section1 .row .col:nth-of-type(1n+3){
@@ -130,5 +148,11 @@ main img{
     }
     #section1 .row .col:first-child{
         display: flex;
+    }
+    #hamburger-menu{
+        display: none;
+    }
+    #normal-menu{
+        display: block;
     }
 }
