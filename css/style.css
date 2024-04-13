@@ -101,6 +101,17 @@ a{
     height: 100%;
     object-fit: cover;
 }
+#section4 .row {
+    gap: 30px;
+}
+#section4 .row .col{
+    background-color: white;
+    border-radius: 20px;
+}
+#section4 button{
+    background-color: #9792e4;
+    padding: 0.5rem 3rem;
+}
 /*CLASS*/
 .container{
     margin: 0 auto;
@@ -123,7 +134,6 @@ a{
     margin-top: 3rem;
 }
 
-
 /*PADDING*/
 .px-2{
     padding: 0 2rem;
@@ -136,22 +146,6 @@ a{
 }
 .p-bottom-2{
     padding-bottom: 2rem;
-}
-
-/*COLOR*/
-.white{
-    color: white;
-}
-.purple{
-    color: #9792e4;
-}
-.black{
-    color: black;
-}
-
-/*TEXT ALIGN CENTER*/
-.center{
-    text-align: center;
 }
 
 /*SPACE BETWEEN*/
@@ -189,12 +183,16 @@ a{
     .purple{
         color: #9792e4;
     }
+    .black{
+        color: black;
+    }
 
     /*LINE HEIGHT*/
     .line-y-1_7{
         line-height: 1.7;
     }
-    /*bold*/
+
+    /*BOLD*/
     .bold{
         font-weight: bold;
     }
@@ -202,6 +200,11 @@ a{
     /*LETTER SPACING*/
     .l-space-3{
         letter-spacing: 3px;
+    }
+
+    /*TEXT ALIGN CENTER*/
+    .center{
+        text-align: center;
     }
 
 /*****************************/
@@ -242,7 +245,13 @@ a{
         padding-left: 2rem;
         text-align: left;
      }
-
+     #section4 .row{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+     #section4 .row .col{
+        width: calc(50% - 15px);
+     }
 }
 
 @media screen and (min-width:992px){
@@ -278,4 +287,7 @@ a{
     #section2{
         padding: 2rem 6rem;
     }
+    #section4 .row .col{
+        width: calc(100%/3 - 20px);
+     }
 }
