@@ -17,21 +17,15 @@ header .container{
 main .row{
     flex-direction: column;
 }
+section{
+    background-color: #9792e4;
+}
 button{
     background-color: #0084fd;
-    font-size: 1.2rem;
-    font-weight: 500;
-    letter-spacing: 3px;
     border: none;
     border-radius:2rem;
-    margin-top: 2rem;
     padding: 1rem 4.5rem;
     font-family: "PT Sans", sans-serif;
-}
-main img{
-    max-width: 19rem;
-    margin-top: 2rem;
-    display: block;
 }
 ul{
     display: flex;
@@ -43,7 +37,6 @@ li{
 li:last-child a{
     background-color: white;
     color: black;
-    font-size: 1.1rem;
     padding: 0.3rem 1rem;
     border-radius: 20px;
 }
@@ -60,7 +53,6 @@ a{
     width: 100%;
     margin-bottom: 2rem;
     border-radius: 20px;
-    padding: 2rem;
 }
 #section1 .row .col:not(:first-child) {
     text-align: center;
@@ -72,15 +64,43 @@ a{
 }
 #section1 p{
     margin-top: 1.2rem;
-    line-height: 1.7;
     font-weight: 600;
     color: rgb(107, 107, 107);
-    font-size: 1.1rem;
 }
 #section1 h2{
     color: #0084fd;
 }
-
+#section1 img{
+    max-width: 19rem;
+    display: block;
+}
+#section2 img{
+    width: 90%;
+    display: block;
+}
+#section3 .col:not(:first-child){
+    background-color: #9792e4;
+    border-radius: 30px;
+    padding: 2rem 1rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+#section3 i{
+    font-size: 1.5rem;
+}
+#section3 figure{
+    border-radius: 125px;
+    width: 200px;
+    overflow: hidden;
+    flex-shrink: 0;
+    height: 200px;
+    margin: 0 auto;
+}
+#section3 figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 /*CLASS*/
 .container{
     margin: 0 auto;
@@ -90,37 +110,108 @@ a{
 }
 
 /*MARGIN*/
-.margin-top-4rem{
+.m-top-4{
     margin-top: 4rem;
 }
+.m-top-2{
+    margin-top: 2rem;
+}
+.m-top-1{
+    margin-top: 1rem;
+}
+.m-top-3{
+    margin-top: 3rem;
+}
+
 
 /*PADDING*/
 .px-2{
     padding: 0 2rem;
 }
-
-/*FONT SIZE*/
-.font-size25{
-    font-size: 25px;
+.py-2{
+    padding: 2rem 0;
+}
+.p-2{
+    padding: 2rem;
+}
+.p-bottom-2{
+    padding-bottom: 2rem;
 }
 
 /*COLOR*/
 .white{
     color: white;
 }
+.purple{
+    color: #9792e4;
+}
+.black{
+    color: black;
+}
 
 /*TEXT ALIGN CENTER*/
+.center{
+    text-align: center;
+}
 
 /*SPACE BETWEEN*/
 .space-between{
     justify-content: space-between;
 }
 
+/*BG-COLOR*/
+.bg-color-white{
+    background-color: white;
+}
+
+/*BORDER RADIUS*/
+.border-rad-30{
+    border-radius: 30px;
+}
+
+/*TEXT PROPRIETY*/
+
+    /*FONT SIZE*/
+    .fs-1{
+        font-size: 1.1rem;
+    }
+    .fs-2_5{
+        font-size: 2.5rem;
+    }
+    .fs-1_3{
+        font-size: 1.3rem;
+    }
+
+    /*COLOR*/
+    .white{
+        color: white;
+    }
+    .purple{
+        color: #9792e4;
+    }
+
+    /*LINE HEIGHT*/
+    .line-y-1_7{
+        line-height: 1.7;
+    }
+    /*bold*/
+    .bold{
+        font-weight: bold;
+    }
+
+    /*LETTER SPACING*/
+    .l-space-3{
+        letter-spacing: 3px;
+    }
+
+/*****************************/
+
 @media screen and (min-width:480px){
     
 }
+
 @media screen and (min-width:768px){
-    main .row{
+    #section1 .row{
         flex-direction: row;
         flex-wrap: wrap;
         gap: 20px;
@@ -140,11 +231,23 @@ a{
         font-size: 1rem;
         padding: 0.6rem 3rem;
     }
+    #section2 h1{
+        font-size: 3.5rem;
+        margin-top: 7rem;
+    }
+    #section3 .row .col:not(:first-child){
+       display: flex;
+    }
+    #section3 .row .col:not(:first-child) div{
+        padding-left: 2rem;
+        text-align: left;
+     }
+
 }
 
 @media screen and (min-width:992px){
     .container{
-        max-width: 1140px;
+        max-width: 1366px;
     }
     #section1 .row .col:first-child{
         display: flex;
@@ -154,5 +257,25 @@ a{
     }
     #normal-menu{
         display: block;
+    }
+    #section2 .row{
+        flex-direction: row;
+    }
+    #section2 .row .col:first-child{
+        width: 60%;
+    }
+    #section2 .row .col:first-child p{
+        padding-right: 5rem;
+    }
+    #section2 .row .col:nth-child(2){
+        width: 40%;
+        margin-top: 19rem;
+    }
+    #section2 h1{
+        font-size: 2rem;
+        margin-top: 7rem;
+    }
+    #section2{
+        padding: 2rem 6rem;
     }
 }
